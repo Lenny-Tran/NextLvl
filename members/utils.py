@@ -13,7 +13,7 @@ def fetch_igdb_games():
     url = 'https://api.igdb.com/v4/games'
 
     data = '''fields name, cover.url; 
-              limit 50;'''  # Adjust the fields and limit as needed
+              limit 10;'''  # Adjust the fields and limit as needed
 
     response = requests.post(url, headers=headers, data=data)
     
